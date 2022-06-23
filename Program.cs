@@ -1,4 +1,4 @@
-﻿using Helper.Helper.Dao;
+﻿using Helper.Dao;
 
 
 // See https://aka.ms/new-console-template for more information
@@ -12,4 +12,4 @@ ClienteDao cliente = new ClienteDao
     CPF = "12345678900"
 };
 
-Helper.Helper.Linefy.ToLine<ClienteDao>(cliente,';',false);
+Console.WriteLine(Helper.Linefy.ToLine<ClienteDao>(cliente));

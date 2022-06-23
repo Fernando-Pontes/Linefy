@@ -1,11 +1,11 @@
 using System.Reflection;
 using System.Text;
 
-namespace Helper.Helper
+namespace Helper
 {
     public static class Linefy
     {
-        public static string ToLine<T>(T obj, char delimitador, bool gerarNomesColuna) where T : class
+        public static string ToLine<T>(T obj, char delimitador = ';', bool gerarNomesColuna = false) where T : class
         {
             Type tipo = typeof(T);
 
@@ -39,8 +39,7 @@ namespace Helper.Helper
                     sb.Append(properties[i].GetValue(obj));
 
             }
-            Console.WriteLine(sb.ToString());
-            return string.Empty;
+            return sb.ToString();
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace Helper.Helper.Dao
+namespace Helper.Dao
 {
     public class ClienteDao
     {
